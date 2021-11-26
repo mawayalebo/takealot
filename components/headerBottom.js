@@ -1,7 +1,11 @@
 import { ChevronDownIcon, SearchIcon } from '@heroicons/react/solid'
+const thirdPartyData = [
+    "Blue Dot Sale", "Shop Christamas", "Summer", "New To Takealot", "Fashion Outlet", "Exclusive To Takealot", "Brand Stores", "Clerance"
+];
+
 const HeaderBotttom = () => {
     return ( 
-        <div className="bg-[#0b79bf] h-20 px-[45px]">
+        <div className="bg-[#0b79bf] px-[45px] pb-2">
             <div className="flex items-center py-2">
                 <div className="px-3"> 
                     <button className="flex items-center p-2 bg-[#4d4d4f] rounded-t-sm w-full">
@@ -27,9 +31,24 @@ const HeaderBotttom = () => {
                     </div>   
                 </div>
             </div>
-            <div className="">
-                
+            <div className="flex items-center">
+                <div className="w-[225px]">
+                    <span></span>
+                </div>
+                <div className="flex items-center rounded-md overflow-x-scroll scrollbar-hide  justify-start">
+                    {
+                        thirdPartyData.map((data, index) => {
+                                return (
+                                    <div key={index} className={`${index===0?"bg-[#f9db09] hover:bg-[#dac003]":"bg-white hover:bg-[#dbdada]"} rouded-sm px-[8px] py-1 border-solid border-gray-400 border-l-[1px] hover:cursor-pointer`}>
+                                        <span className="text-[#333] text-sm whitespace-nowrap">{data}</span>
+                                    </div>
+                                )
+                            }
+                        )
+                    }
+                </div>
             </div>
+            
         </div>
      );
 }
