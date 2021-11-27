@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import AlertInfo from '../components/alertinfo'
 import Header from '../components/header'
-import { axios } from 'axios'
- const Home =({myData})=>{
-   console.log(myData);
+import { useDispatch } from 'react-redux'
+import {  setDepartments, setThirdPartyData } from '../features/slices/uiData'
+
+ const Home =({departments, thirdPartyData})=>{
+
+  const dispatch = useDispatch();
+  dispatch(setDepartments(departments));
+  dispatch(setThirdPartyData(thirdPartyData));
+
   return (
     <div className="">
       <Head>
@@ -22,11 +28,17 @@ import { axios } from 'axios'
   )
 }
 export async function getStaticProps() {
-  const deptData = await fetch('http://127.0.0.1:3000/api/getDept');
-  const departments = await response.json();
+  const deptData = await fetch(`http://${process.env.NEXT_PUBLIC_URL}/api/getDept`);
+  const departments = await deptData.json();
+
+  const thirdPartyResponse = await fetch(`http://${process.env.NEXT_PUBLIC_URL}/api/thirdParty`);
+  const thirdPartyData = await thirdPartyResponse.json();
+  
+
   return {
       props: {
-          departments
+          departments,
+          thirdPartyData
       }
   }
 }

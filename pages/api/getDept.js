@@ -20,6 +20,5 @@ const getDeptAPI = (req, res) =>{
     "TV, Audio & Media"
     ];
     res.status(200).json(data);
-    console.log(data);
 }
 export default getDeptAPI;
