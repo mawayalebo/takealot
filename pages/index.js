@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import AlertInfo from '../components/alertinfo'
 import Header from '../components/header'
-
-export default function Home() {
+import { axios } from 'axios'
+ const Home =({myData})=>{
+   console.log(myData);
   return (
     <div className="">
       <Head>
@@ -20,3 +21,13 @@ export default function Home() {
     </div>
   )
 }
+export async function getStaticProps() {
+  const deptData = await fetch('http://127.0.0.1:3000/api/getDept');
+  const departments = await response.json();
+  return {
+      props: {
+          departments
+      }
+  }
+}
+export default Home

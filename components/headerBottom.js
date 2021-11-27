@@ -1,9 +1,7 @@
 import { ChevronDownIcon, SearchIcon } from '@heroicons/react/solid'
-const thirdPartyData = [
-    "Blue Dot Sale", "Shop Christamas", "Summer", "New To Takealot", "Fashion Outlet", "Exclusive To Takealot", "Brand Stores", "Clerance"
-];
 
-const HeaderBotttom = () => {
+const HeaderBotttom =({}) => {
+    
     return ( 
         <div className="bg-[#0b79bf] px-[45px] pb-2">
             <div className="flex items-center py-2">
@@ -12,6 +10,11 @@ const HeaderBotttom = () => {
                         <span className="text-white font-semibold flex-1">Shop by Department</span>
                         <ChevronDownIcon className="h-4 text-white ml-2" />
                     </button>
+                    <div>
+                        {
+                            
+                        }
+                    </div>
                 </div>
                 <div className="flex justify-end flex-1">
                     
@@ -36,15 +39,15 @@ const HeaderBotttom = () => {
                     <span></span>
                 </div>
                 <div className="flex items-center rounded-md overflow-x-scroll scrollbar-hide  justify-start">
-                    {
-                        thirdPartyData.map((data, index) => {
+                    {/*
+                       thirdPartyData.map((data, index) => {
                                 return (
                                     <div key={index} className={`${index===0?"bg-[#f9db09] hover:bg-[#dac003]":"bg-white hover:bg-[#dbdada]"} rouded-sm px-[8px] py-1 border-solid border-gray-400 border-l-[1px] hover:cursor-pointer`}>
                                         <span className="text-[#333] text-sm whitespace-nowrap">{data}</span>
                                     </div>
                                 )
                             }
-                        )
+                        )*/
                     }
                 </div>
             </div>
@@ -52,5 +55,6 @@ const HeaderBotttom = () => {
         </div>
      );
 }
- 
+
+
 export default HeaderBotttom;
