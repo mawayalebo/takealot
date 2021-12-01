@@ -26,9 +26,9 @@ const HeaderBotttom =({}) => {
                 </div>
                 <div className="flex flex-col flex-1 space-y-2 px-[12px]">
                     
-                    <div className="flex items-center  flex-1 justify-end">
+                    <div className="flex items-center flex-1 justify-center">
                         {/*search bar*/}
-                        <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm text-xs w-[521px]" placeholder="Search for products, brands..."/>        
+                        <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm text-xs w-[521px] flex-grow" placeholder="Search for products, brands..."/>        
                         {/*select department*/}
                         <div>
                             <select name="" id="" className="py-1 pr-[25px] text-xs">
