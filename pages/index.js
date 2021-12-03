@@ -3,6 +3,7 @@ import AlertInfo from '../components/alertinfo'
 import Header from '../components/header'
 import { useDispatch } from 'react-redux'
 import {  setDepartments, setThirdPartyData } from '../features/slices/uiData'
+import BodyTop from '../components/bodyTop'
 
  const Home =({departments, thirdPartyData})=>{
 
@@ -20,7 +21,7 @@ import {  setDepartments, setThirdPartyData } from '../features/slices/uiData'
       <main className="lg:mx-auto">
         <AlertInfo/>
         <Header/>
-        
+        <BodyTop/>
       </main>
 
       
