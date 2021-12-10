@@ -1,4 +1,4 @@
-import { ChevronDownIcon, SearchIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon, SearchIcon, ChevronRightIcon, ClockIcon } from '@heroicons/react/solid'
 import { useSelector } from 'react-redux';
 import { selectDepartments , selectThirdPartyData } from '../features/slices/uiData';
 
@@ -13,16 +13,27 @@ const HeaderBotttom =({}) => {
                         <span className="text-white text-sm font-semibold flex-1 text-left whitespace-nowrap">Shop by Department</span>
                         <ChevronDownIcon className="h-4 text-white absolute right-2" />
                     </button>
-                    <div className="absolute flex flex-col bg-white w-[89.5%] py-2 shadow-md z-30">
-                        {
-                            departments.map((data, index)=> (
-                                <div key={index} className="group flex items-center px-2 hover:bg-[#0b79bf] hover:text-white">
-                                    <span className="text-gray-600 text-xs flex-1 group-hover:text-white group-hover:p-2">{data}</span>
-                                    <ChevronRightIcon className="h-4 text-gray-600 ml-2 group-hover:text-white" />
-                                </div>
-                            ))
-                        }
+                    <div className="absolute flex flex-col bg-white w-[89.5%] shadow-md z-30">
+
+                        <div className="py-2 flex flex-col">
+                            {
+                                departments.map((data, index)=> (
+                                    <div key={index} className="group flex items-center px-2 hover:bg-[#0b79bf] hover:text-white">
+                                        <span className="text-gray-600 text-xs flex-1 group-hover:text-white group-hover:p-2">{data}</span>
+                                        <ChevronRightIcon className="h-4 text-gray-600 ml-2 group-hover:text-white" />
+                                    </div>
+                                ))
+                            }
+                            
+                        </div>
+
+                        <div className="flex justify-center items-cente bg-[#0fcc5e] p-2 space-x-2 items-center">
+                            <ClockIcon className="h-4 text-white" />
+                            <h1 className="uppercase text-white font-bold">Daily Deals</h1>
+                        </div>
                     </div>
+                    
+                    
                 </div>
                 <div className="flex flex-col flex-1 space-y-2 px-[12px] ">
                     

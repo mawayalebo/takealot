@@ -15,7 +15,7 @@ import BodyTop from '../components/bodyTop'
     <div className="">
       <Head>
         <title>Takealot.com: Online Shopping | SA's leading online store</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className="lg:mx-auto">
