@@ -1,18 +1,19 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Image from 'next/image';
 
 const Banner = () => {
     return ( 
-        <div className="z-[-100]">
-            <Carousel showThumbs={false} showStatus={false} showIndicators={false} swipeable={true} infiniteLoop={true}>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+        <div className="z-[-100] w-[550px] h-[250px]">
+            <Carousel showThumbs={false} showStatus={false} showIndicators={true} infiniteLoop={true} interval={3000}>
+                <div className="w-[550px] h-[250px]">
+                    <Image src="/images/banner_3.png" layout="fill"/>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <div className="w-[550px] h-[250px]">
+                    <Image src="/images/banner_2.png" layout="fill"/>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
+                <div className="w-[550px] h-[250px]">
+                    <Image src="/images/banner_3.png" layout="fill"/>
                 </div>
             </Carousel>
         </div>

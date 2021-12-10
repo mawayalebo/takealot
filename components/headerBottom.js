@@ -28,10 +28,10 @@ const HeaderBotttom =({}) => {
                     
                     <div className="flex items-center flex-1 justify-center">
                         {/*search bar*/}
-                        <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm border-0 text-xs w-[521px] flex-grow" placeholder="Search for products, brands..."/>        
+                        <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm border-0 text-xs w-[521px] flex-grow active:border-0 active:outline-none" placeholder="Search for products, brands..."/>        
                         {/*select department*/}
                         <div>
-                            <select name="" id="" className="py-1 pr-[45px] text-xs">
+                            <select name="" id="" className="py-1 pr-[45px] text-xs active:border-0 active:outline-none">
                                 <option value="all departments">All Departments</option>
                                 {
                                     departments.map((data, index)=> (
