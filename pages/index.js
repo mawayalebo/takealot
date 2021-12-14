@@ -6,6 +6,7 @@ import {  setDepartments, setThirdPartyData } from '../features/slices/uiData'
 import BodyTop from '../components/bodyTop'
 import HeaderMobile from '../components/mobile/header'
 import BannerMobile from '../components/mobile/banner'
+import DailyDealsMobile from '../components/mobile/dailyDeals'
 
  const Home =({departments, thirdPartyData})=>{
 
@@ -26,6 +27,7 @@ import BannerMobile from '../components/mobile/banner'
         <Header/>
         <BannerMobile/>
         <BodyTop/>
+        <DailyDealsMobile/>
       </main>
 
       
