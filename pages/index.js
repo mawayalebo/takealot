@@ -4,6 +4,8 @@ import Header from '../components/header'
 import { useDispatch } from 'react-redux'
 import {  setDepartments, setThirdPartyData } from '../features/slices/uiData'
 import BodyTop from '../components/bodyTop'
+import HeaderMobile from '../components/mobile/header'
+import BannerMobile from '../components/mobile/banner'
 
  const Home =({departments, thirdPartyData})=>{
 
@@ -19,8 +21,10 @@ import BodyTop from '../components/bodyTop'
       </Head>
 
       <main className="lg:mx-auto">
+        <HeaderMobile/>
         <AlertInfo/>
         <Header/>
+        <BannerMobile/>
         <BodyTop/>
       </main>
 

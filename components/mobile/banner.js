@@ -2,17 +2,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 
-const Banner = () => {
+const BannerMobile = () => {
     return ( 
-        <div className="z-[-100] w-[550px] h-[250px]">
+        <div className="relative w-[100vw] h-[250px] lg:hidden">
             <Carousel showThumbs={false} showStatus={false} showIndicators={true} infiniteLoop={true} interval={3000}>
-                <div className="w-full h-[250px]">
-                    <Image src="/images/banner_3.png" layout="fill" objectFit="cover"/>
+                <div className="w-screen h-[250px]">
+                    <Image src="/images/banner_1.png" layout="fill" objectFit="cover"/>
                 </div>
-                <div className="w-full h-[250px]">
+                <div className="w-screen h-[250px]">
                     <Image src="/images/banner_2.png" layout="fill" objectFit="cover"/>
                 </div>
-                <div className="w-full h-[250px]">
+                <div className="w-screen h-[250px]">
                     <Image src="/images/banner_3.png" layout="fill" objectFit="cover"/>
                 </div>
             </Carousel>
@@ -20,4 +20,4 @@ const Banner = () => {
      );
 }
  
-export default Banner;
+export default BannerMobile;

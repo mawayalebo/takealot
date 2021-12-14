@@ -3,7 +3,7 @@ import HeaderTop from "./headerTop";
 
 const Header = () => {
     return ( 
-        <div className="relative">
+        <div className="hidden lg:block relative">
             {/* header top */}
             <HeaderTop/>
             {/* header bottom */}

@@ -3,7 +3,7 @@ import WheresMyOrder from "./wheresMyOrder";
 import Image from 'next/image';
 
 const BodyTop = () => {
-    return ( <div className="relative flex items-center !pl-16">
+    return ( <div className="hidden  lg:relative lg:flex lg:items-center lg:!pl-16">
         <div className="w-[20vw]">
 
         </div>
