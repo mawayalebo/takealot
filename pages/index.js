@@ -7,6 +7,7 @@ import BodyTop from '../components/bodyTop'
 import HeaderMobile from '../components/mobile/header'
 import BannerMobile from '../components/mobile/banner'
 import DailyDealsMobile from '../components/mobile/dailyDeals'
+import NavBar from '../components/mobile/navBar'
 
  const Home =({departments, thirdPartyData})=>{
 
@@ -22,12 +23,14 @@ import DailyDealsMobile from '../components/mobile/dailyDeals'
       </Head>
 
       <main className="lg:mx-auto">
+        <NavBar />
         <HeaderMobile/>
         <AlertInfo/>
         <Header/>
         <BannerMobile/>
         <BodyTop/>
         <DailyDealsMobile/>
+        
       </main>
 
       

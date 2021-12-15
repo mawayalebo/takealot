@@ -5,7 +5,7 @@ import Image from 'next/image';
 const BannerMobile = () => {
     return ( 
         <div className="relative w-[100vw] h-[250px] lg:hidden">
-            <Carousel showThumbs={false} showStatus={false} showIndicators={true} infiniteLoop={true} interval={3000}>
+            <Carousel showThumbs={false} showStatus={false} showIndicators={true} infiniteLoop={true} interval={3}>
                 <div className="w-screen h-[250px]">
                     <Image src="/images/banner_1.png" layout="fill" objectFit="cover"/>
                 </div>
