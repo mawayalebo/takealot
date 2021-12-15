@@ -3,6 +3,7 @@ import { XIcon , ArrowRightIcon, ShoppingCartIcon, HeartIcon } from "@heroicons/
 import { selectShowMobileNav, setShowMobileNav } from "../../features/slices/uiData";
 import { useSelector, useDispatch} from "react-redux";
 import { useState } from "react";
+import NavFooter from "./navFooter";
 
 const NavBar = () => {
     const [ cartColor, setCartColor ] = useState("#0fcc5e");
@@ -32,6 +33,7 @@ const NavBar = () => {
                     </div>
                     <Navigator data={set1}/>
                     <Navigator data={set2}/>
+                    <NavFooter />
                 </div>
                 <div className="p-2">
                     <XIcon onClick={()=>{dispatch(setShowMobileNav(false))}} className="h-[23px] text-white hover:scale-110"/>
