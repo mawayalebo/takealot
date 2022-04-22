@@ -1,8 +1,8 @@
+
 const WheresMyOrder = () => {
     return ( 
         <div className="p-2 shadow-md">
             <div className="relative flex items-center overflow-hidden">
-               
                 <div className="absolute bg-[#50bcff] rounded-full h-40 w-40 -top-8 -left-20"></div>
                 
                 <div className="relative">

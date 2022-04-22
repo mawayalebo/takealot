@@ -39,10 +39,10 @@ const HeaderBotttom =({}) => {
                     
                     <div className="flex items-center flex-1 justify-center">
                         {/*search bar*/}
-                        <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm border-0 text-xs w-[521px] flex-grow active:border-0 active:outline-none" placeholder="Search for products, brands..."/>        
+                        <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm border-0 ring-0 hover:border-0 hover:ring-0 text-xs w-[521px] flex-grow active:border-0 active:outline-none" placeholder="Search for products, brands..."/>        
                         {/*select department*/}
                         <div>
-                            <select name="" id="" className="py-1 pr-[45px] text-xs active:border-0 active:outline-none">
+                            <select name="" id="" className="py-1 pr-[45px] text-xs border-0 ring-0 !hover:border-0 hover:border-transparent hover-ring-0 active:outline-none">
                                 <option value="all departments">All Departments</option>
                                 {
                                     departments.map((data, index)=> (
@@ -58,11 +58,11 @@ const HeaderBotttom =({}) => {
                     </div> 
 
                     <div className="flex items-center">
-                    <div className="flex items-center rounded-md overflow-x-scroll scrollbar-hide  justify-start">
+                    <div className="flex flex-row items-center rounded-md overflow-x-scroll scrollbar-hide  justify-start w-full">
                         {
                             thirdPartyData.map((data, index) => {
                                         return (
-                                            <div key={index} className={`${index===0?"bg-[#f9db09] hover:bg-[#dac003]":"bg-white hover:bg-[#dbdada]"} rouded-sm px-[8px]  border-solid border-gray-400 border-l-[1px] hover:cursor-pointer`}>
+                                            <div key={index} className={`${index===0?"bg-[#f9db09] hover:bg-[#dac003]":"bg-white hover:bg-[#dbdada]"} rouded-sm px-[8px]  border-solid border-gray-400 border-l-[1px] hover:cursor-pointer flex-1 flex justify-center py-1`}>
                                                 <span className="text-[#333] text-xs whitespace-nowrap">{data}</span>
                                             </div>
                                         )

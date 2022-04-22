@@ -9,25 +9,25 @@ const HeaderTop = () => {
                         <Image src="/images/logo.svg" alt="logo" width={180} height={37}/>
                     </div>
                     <div className="flex px-2">
-                        <div className="p-2 border-r-2 border-solid border-gray-300">
+                        <div className="px-2 border-r-2 border-solid border-gray-300">
                             <span className="text-xs hover:cursor-pointer hover:text-[#0b79bf] hover:underline">Help</span>
                         </div>
-                        <div className="p-2">
+                        <div className="px-2">
                             <span className=" text-xs hover:cursor-pointer hover:text-[#0b79bf] hover:underline">Sell on takealot</span>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-1 items-center justify-end">
-                    <div className="p-2 border-r-2 border-solid border-gray-300">
+                    <div className="px-2 border-r-2 border-solid border-gray-300">
                         <span className="text-xs hover:cursor-pointer hover:text-[#0b79bf] hover:underline">Login</span>
                     </div>
-                    <div className="p-2 border-r-2 border-solid border-gray-300">
+                    <div className="px-2 border-r-2 border-solid border-gray-300">
                         <span className="text-xs hover:cursor-pointer hover:text-[#0b79bf] hover:underline">Register</span>
                     </div>
-                    <div className="p-2 border-r-2 border-solid border-gray-300">
+                    <div className="px-2 border-r-2 border-solid border-gray-300">
                         <span className="text-xs hover:cursor-pointer hover:text-[#0b79bf] hover:underline">Order</span>
                     </div>
-                    <div className="p-2 flex space-x-2">
+                    <div className="px-2 flex space-x-2">
                         <span className="text-xs hover:cursor-pointer hover:text-[#0b79bf]">My Account</span>
                         <ChevronDownIcon className="h-4 text-gray-600" />
                     </div>

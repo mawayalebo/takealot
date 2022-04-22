@@ -6,6 +6,7 @@ import { useState } from "react";
 import NavFooter from "./navFooter";
 
 const NavBar = () => {
+
     const [ cartColor, setCartColor ] = useState("#0fcc5e");
     const dispatch = useDispatch();
     const showMobileNav = useSelector(selectShowMobileNav);
@@ -24,8 +25,12 @@ const NavBar = () => {
         {title:"List", icon:HeartIcon, icon_color: "" , href:"/list", actionIcon: ArrowRightIcon},
     ]
     return ( 
-        <div className={`bg-[#0000008a] w-screen h-screen ${showMobileNav?"absolute":"hidden"} z-40 flex lg:hidden space-x-2`}>
-                <div className="flex flex-col bg-[#f0f0f0] w-[90vw] h-screen">
+        <div>
+            <div 
+                 className={`bg-[#0000008a] w-screen h-screen ${showMobileNav?"absolute":"hidden"} z-40 flex lg:hidden space-x-2 `}>
+                <div 
+                    className="flex flex-col bg-[#f0f0f0] w-[90vw] h-screen"
+                >
                     <div className="flex p-[26px] bg-white shadow-md">
                         <div className="">
                             <img src="/images/logo.svg"  className="h-[23px] w-[111.03px] flex-1" />
@@ -35,10 +40,10 @@ const NavBar = () => {
                     <Navigator data={set2}/>
                     <NavFooter />
                 </div>
-                <div className="p-2">
+                <div>      
                     <XIcon onClick={()=>{dispatch(setShowMobileNav(false))}} className="h-[23px] text-white hover:scale-110"/>
                 </div>
-                
+            </div>           
         </div>
      );
 }
