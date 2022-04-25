@@ -6,8 +6,8 @@ const HeaderBotttom =({}) => {
     const departments = useSelector(selectDepartments);
     const thirdPartyData = useSelector(selectThirdPartyData);
     return ( 
-        <div className="bg-[#0b79bf] px-[45px] pb-2">
-            <div className="flex items-center py-2">
+        <div className="bg-[#0b79bf]  pb-2">
+            <div className="flex items-center py-2 max-w-6xl mx-auto">
                 <div className="relative px-3 flex-flex-col justify-center items-center"> 
                     <button className="relative flex items-center bg-[#4d4d4f] rounded-t-sm pr-[64px] p-[9px]">
                         <span className="text-white text-sm font-semibold flex-1 text-left whitespace-nowrap">Shop by Department</span>
