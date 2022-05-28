@@ -42,7 +42,7 @@ const HeaderBotttom =({}) => {
                         <input type="text" name="search" id="serachbar" className="py-1 rounded-l-sm border-0 ring-0 hover:border-0 hover:ring-0 text-xs w-[521px] flex-grow active:border-0 active:outline-none" placeholder="Search for products, brands..."/>        
                         {/*select department*/}
                         <div>
-                            <select name="" id="" className="py-1 pr-[45px] text-xs border-0 ring-0 !hover:border-0 hover:border-transparent hover-ring-0 active:outline-none">
+                            <select name="" id="" className="py-1 pr-[45px] text-xs border-0 ring-0 hover:border-0 hover:ring-0 active:border-0 active:outline-none active:ring-0 active:border-transparent active-ring-transparent active:ring-0 focus:border-transparent focus:ring-transparent">
                                 <option value="all departments">All Departments</option>
                                 {
                                     departments.map((data, index)=> (
