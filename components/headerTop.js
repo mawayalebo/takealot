@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HeaderTop = () => {
     return ( 
-        <div className="flex items-center bg-white p-2 mx-[45px]">
+        <div className="flex items-center bg-white p-2 max-w-6xl mx-auto">
                 <div className="flex flex-1 items-center">
                     <div className="logo ">
                         <Image src="/images/logo.svg" alt="logo" width={180} height={37}/>
